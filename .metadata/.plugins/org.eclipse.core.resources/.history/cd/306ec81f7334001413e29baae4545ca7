@@ -19,9 +19,10 @@ public class Hello {
 		System.out.println("-----");
 	}
 }	
-/*readthisslowly*/
-
-	
+		public class Ugly{public static void main(String[] args) 
+			{System.out.println("I eat pizza");}
+			
+		}
 		
 	
 

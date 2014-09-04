@@ -8,21 +8,7 @@ public class Hello {
 		System.out.println("The end");
 		System.out.println("This\n should print\t out\\ \" ");
 		System.out.print("Ilikecheese");
-		System.out.print("");
-		System.out.print("hon");
-		System.out.print("poo");
-		System.out.println("john");
-		System.out.println("dongus");
-		System.out.println("dorritos");
-		System.out.println(" /\\");
-		System.out.println("/  \\");
-		System.out.println("-----");
-	}
-}	
-/*readthisslowly*/
-
-	
 		
-	
-
+	}
+}
 
