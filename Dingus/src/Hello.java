@@ -16,7 +16,10 @@ public class Hello {
 		System.out.println("dorritos");
 		System.out.println(" /\\");
 		System.out.println("/  \\");
-		System.out.println("-----");
+		System.out.println("-----"); //I like you
+		System.out.println("Noah");
+		System.out.println("Bob");
+		
 	}
 }	
 /*readthisslowly*/
