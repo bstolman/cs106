@@ -45,7 +45,7 @@ public class Calculator {
 		
 		//tip amount
 		
-		System.out.print("Your tip is ");
+		System.out.println("Your tip is ");
 		System.out.println(tip);
 		System.out.print("Your new total is $250");}
 	}
