@@ -26,8 +26,8 @@ public class Calculator {
 		tip = (cost * percentage);
 		
 		//tip amount
-		System.out.print("Your tip is ");
-		System.out.println(tip);
+		System.out.print("Your tip is");
+		System.out.println( tip);
 		System.out.print("Your new total is $240");
 				
 		

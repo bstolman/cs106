@@ -21,12 +21,12 @@ public class Calculator {
 		
 		
 	//input values
-		cost = 200;
+		cost = $200;
 		percentage = .20;
-		tip = (cost * percentage);
+		tip = (cost * percentage + $);
 		
 		//tip amount
-		System.out.print("Your tip is ");
+		System.out.println("Your tip is");
 		System.out.println(tip);
 		System.out.print("Your new total is $240");
 				

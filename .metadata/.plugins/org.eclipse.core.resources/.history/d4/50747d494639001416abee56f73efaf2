@@ -19,16 +19,14 @@ public class Calculator {
 		double percentage;
 		double tip;
 		
-		
-	//input values
+		//input values
 		cost = 200;
 		percentage = .20;
 		tip = (cost * percentage);
 		
 		//tip amount
-		System.out.print("Your tip is ");
-		System.out.println(tip);
-		System.out.print("Your new total is $240");
+		System.out.print (tip);
+		
 				
 		
 				
