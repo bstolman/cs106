@@ -19,10 +19,8 @@ public class For {
 				System.out.print(i1 * j + "");
 				}
 			System.out.println();
-		
+		}
 		}
 	}
-}
 
-//TODO: Figure all of this stuff out ya dingus
 
