@@ -10,7 +10,7 @@ System.out.println("Total Meal Amount");
 System.out.print("$");
 double total = in.nextDouble();
 System.out.println("How much would you like to tip?");
-for (double i1 = 15; i1 <=20; i1++) {
+for (double i1 = total; i1 <=15; i1++) {
 	System.out.println(i1  + "");
 double tip = in.nextDouble();
 	System.out.print("$" + total * tip);
