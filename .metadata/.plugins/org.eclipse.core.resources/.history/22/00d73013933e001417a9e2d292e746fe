@@ -18,7 +18,7 @@ double tip = in.nextDouble(); {
 	System.out.println("$" + total * tip/100);
 System.out.println("Your total is...");
 System.out.println("$" + ((total * tip/100) + total));	
-System.out.print("Here is a mint!");
+System.out.print("Here is a mint :)");
 	
 	
 		}
