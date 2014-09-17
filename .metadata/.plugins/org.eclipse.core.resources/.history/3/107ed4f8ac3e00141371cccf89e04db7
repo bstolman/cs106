@@ -14,7 +14,7 @@ for (double i1 = 15; i1 <=20; i1++) {
 	System.out.println("%" + i1 + "?");}
 System.out.print("%");
 double tip = in.nextDouble(); {
-System.out.println("Your tip is...");	
+System.out.print("Your tip is...");	
 System.out.println("$" + total * tip/100);
 System.out.println("Your total is...");
 System.out.println("$" + ((total * tip/100) + total));	
