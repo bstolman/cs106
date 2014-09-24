@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.127+/Users/BenStolman/Desktop/cs106/.metadata/.plugins/org.eclipse.jdt.core
 1819685514.index
 2545238116.index
@@ -27,3 +28,15 @@ INDEX VERSION 1.127+/Users/BenStolman/Desktop/cs106/.metadata/.plugins/org.eclip
 1384487945.index
 3788427059.index
 2170358331.index
+=======
+INDEX VERSION 1.127+/Users/BenStolman/Documents/cs106/.metadata/.plugins/org.eclipse.jdt.core
+2170358331.index
+3782769343.index
+4050450046.index
+447609966.index
+820019804.index
+3567774117.index
+2841066477.index
+575598697.index
+4132254105.index
+>>>>>>> FETCH_HEAD

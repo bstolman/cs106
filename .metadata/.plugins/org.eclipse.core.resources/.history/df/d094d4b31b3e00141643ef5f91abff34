@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+/**
+ * @author BenStolman
+ * @param args Arguments passed to the programs
+ * @return double The amount
+ */
+public class Parameters {
+	/* void means that it isn't returning anything
+	/**
+	 * 
+	 */
+	public static void writeSpaces(int number) {
+		for (int i = 1; i <= number; i ++) {
+			System.out.print("");
+		
+		}
+	
+	}
+}

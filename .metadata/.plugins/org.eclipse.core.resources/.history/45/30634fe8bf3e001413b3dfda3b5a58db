@@ -1,0 +1,48 @@
+import java.util.Scanner; 
+/*
+ * @BenStolman
+ */
+public class Stringtttt {
+	public static String main(String[] args) {
+		
+Scanner console = new Scanner(System.in);	
+
+System.out.println("Total Meal Amount");
+System.out.print("$");
+
+double total = console.nextDouble();
+
+System.out.println("How much would you like to tip?");
+for (double i1 = 15; i1 <=20; i1++) {
+	System.out.println("%" + i1 + "?");}
+
+System.out.print("%");
+
+System.out.println("Your tip is...");	
+System.out.println("$" + total * tip/100);
+System.out.println("Your total is...");
+System.out.println("$" + ((total * tip/100) + total));	
+System.out.print("Here is a mint!");
+
+
+System.out.println();
+System.out.println("Your total is:" + money(total,tip) + "Here is a mint!");
+double tip1 = console.nextDouble(); 
+
+	
+ double money(total,tip1); {
+	return("$" + ((total * tip1/100) + total));
+	
+		}
+	}
+
+	private static String money(double total, double tip) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+	
+
+		
+
+
