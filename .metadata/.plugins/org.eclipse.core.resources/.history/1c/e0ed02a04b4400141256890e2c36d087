@@ -26,12 +26,12 @@ public class Band {
 
 		System.out.println("WHICH FAMOUS BAND ARE YOU?");
 	
-		boolean likesrock = false;
-		while(likesrock == false)  {
+		String likesrock = "false";
+		while(likesrock.equals("false"))  {
 		System.out.println("Do you like rock music? (Answer True of False)");
-		likesrock = console.nextBoolean();
+		boolean band = console.nextBoolean();
 		
-		if (likesrock == true) {
+		if (band == true) {
 			System.out.println("I respect that");
 			rollingstones++;
 			ledzeppelin++;
@@ -40,7 +40,7 @@ public class Band {
 		
 
 		System.out.println("Is most of your band alive?");
-		if (likesrock == true) {
+		if (band == true) {
 			redhotchillipeppers++;
 		} else {
 			rollingstones++;
