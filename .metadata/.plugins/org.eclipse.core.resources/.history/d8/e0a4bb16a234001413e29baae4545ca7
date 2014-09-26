@@ -1,9 +1,0 @@
-package FooBarBazMumble;
-
-public class FooBarBazMumble {
-	public static void main(String[] args) {
-		foo();
-		bar();
-		System.out.println("mumble");
-	}
-}
