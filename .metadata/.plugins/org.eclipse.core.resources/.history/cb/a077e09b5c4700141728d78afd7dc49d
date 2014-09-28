@@ -91,32 +91,22 @@ public class Band {
 						thewho++;
 					} else {
 						redhotchilipeppers++;
-					}
-					System.out.println("Does your band have more than 3 top 10 hits in the US ?");
-					likesrock = console.nextBoolean();
-					if (likesrock == true) {
-						rollingstones++;
-						
-					} else {
-						redhotchilipeppers++;
-						ledzeppelin++;
-						thewho++;
-					}
-					if  (ledzeppelin > redhotchilipeppers & ledzeppelin > rollingstones && ledzeppelin > thewho) {
+
+					if  (ledzeppelin >= redhotchilipeppers & ledzeppelin >= rollingstones && ledzeppelin >= thewho) {
 						System.out.print ("You are Led Zeppelin"); 
 					
-					} else if (redhotchilipeppers > ledzeppelin & redhotchilipeppers > rollingstones && redhotchilipeppers > thewho) { 
+					} else if (redhotchilipeppers >= ledzeppelin & redhotchilipeppers >= rollingstones && redhotchilipeppers >= thewho) { 
 						System.out.print ("You are The Red Hot Chili Peppers");
 							
-					} else if (thewho > redhotchilipeppers & thewho > rollingstones && thewho > ledzeppelin) { 
+					} else if (thewho >= redhotchilipeppers & thewho >= rollingstones && thewho >= ledzeppelin) { 
 						System.out.print ("You are The Who");
 					
-					}else if (rollingstones > redhotchilipeppers & rollingstones > thewho && rollingstones > ledzeppelin) { 
+					}else if (rollingstones >= redhotchilipeppers & rollingstones >= thewho && rollingstones >= ledzeppelin) { 
 						System.out.print ("You are The RollingStones");
 					}	
 				}
 			}
-		
+		}
 
 
 			

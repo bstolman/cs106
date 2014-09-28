@@ -91,17 +91,7 @@ public class Band {
 						thewho++;
 					} else {
 						redhotchilipeppers++;
-					}
-					System.out.println("Does your band have more than 3 top 10 hits in the US ?");
-					likesrock = console.nextBoolean();
-					if (likesrock == true) {
-						rollingstones++;
-						
-					} else {
-						redhotchilipeppers++;
-						ledzeppelin++;
-						thewho++;
-					}
+
 					if  (ledzeppelin > redhotchilipeppers & ledzeppelin > rollingstones && ledzeppelin > thewho) {
 						System.out.print ("You are Led Zeppelin"); 
 					
@@ -116,7 +106,7 @@ public class Band {
 					}	
 				}
 			}
-		
+		}
 
 
 			

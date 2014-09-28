@@ -23,7 +23,7 @@ public class Band {
 	 *            Rock Band Number 3
 	 * @param thewho
 	 *            Rock Band Number 4
-	 * 
+	 * @return String
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -39,7 +39,8 @@ public class Band {
 
 		boolean likesrock = false;
 		while (likesrock == false) {
-			System.out.println("Do you like rock music? (Answer True or False)");
+			System.out
+					.println("Do you like rock music? (Answer True or False)");
 			likesrock = console.nextBoolean();
 		}
 		// Loops if you answer no to the first question.
@@ -80,28 +81,11 @@ public class Band {
 						thewho++;
 						rollingstones++;
 					} else {
-						redhotchilipeppers++;
-						ledzeppelin++;
-					}
-					System.out.println("Did your band form in the 60's ?");
-					likesrock = console.nextBoolean();
-					if (likesrock == true) {
-						rollingstones++;
-						ledzeppelin++;
 						thewho++;
-					} else {
-						redhotchilipeppers++;
-					}
-					System.out.println("Does your band have more than 3 top 10 hits in the US ?");
-					likesrock = console.nextBoolean();
-					if (likesrock == true) {
-						rollingstones++;
-						
-					} else {
-						redhotchilipeppers++;
 						ledzeppelin++;
-						thewho++;
 					}
+					
+
 					if  (ledzeppelin > redhotchilipeppers & ledzeppelin > rollingstones && ledzeppelin > thewho) {
 						System.out.print ("You are Led Zeppelin"); 
 					
@@ -117,6 +101,7 @@ public class Band {
 				}
 			}
 		
+	
 
 
 			
