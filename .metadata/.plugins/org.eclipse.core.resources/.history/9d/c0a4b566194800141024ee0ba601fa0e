@@ -130,11 +130,10 @@ public class Band {
 				&& rollingstones > ledzeppelin) {
 			System.out.print("You are The Rolling Stones");
 		} else if (rollingstones == redhotchilipeppers
-				|| rollingstones == thewho || rollingstones == ledzeppelin ||
-				 thewho == redhotchilipeppers || thewho == ledzeppelin || ledzeppelin == redhotchilipeppers) {
-			System.out.print("The results are inconclusive, please insert 50 cents and try again.");
+				|| rollingstones == thewho || rollingstones == ledzeppelin) {
+			System.out
+					.print("The results are inconclusive, please insert 50 cents and try again.");
 
-			}
 		}
 	}
 }
