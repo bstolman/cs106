@@ -39,7 +39,8 @@ public class Band {
 
 		boolean likesrock = false;
 		while (likesrock == false) {
-			System.out.println("Do you like rock music? (Answer True or False)");
+			System.out
+					.println("Do you like rock music? (Answer True or False)");
 			likesrock = console.nextBoolean();
 		}
 		// Loops if you answer no to the first question.
@@ -102,7 +103,7 @@ public class Band {
 			redhotchilipeppers++;
 			ledzeppelin++;
 			thewho++;
-		}
+
 			System.out.println("Does your band have the letter 'r' in its name ?");
 			likesrock = console.nextBoolean();
 			if (likesrock == true) {
@@ -112,28 +113,28 @@ public class Band {
 				thewho++;
 				ledzeppelin++;
 			}
-			if (ledzeppelin > redhotchilipeppers & ledzeppelin > rollingstones
-					&& ledzeppelin > thewho) {
-				System.out.print("You are Led Zeppelin");
+		if (ledzeppelin > redhotchilipeppers & ledzeppelin > rollingstones
+				&& ledzeppelin > thewho) {
+			System.out.print("You are Led Zeppelin");
 
-			} else if (redhotchilipeppers > ledzeppelin
-					& redhotchilipeppers > rollingstones
-					&& redhotchilipeppers > thewho) {
-				System.out.print("You are The Red Hot Chili Peppers");
+		} else if (redhotchilipeppers > ledzeppelin
+				& redhotchilipeppers > rollingstones
+				&& redhotchilipeppers > thewho) {
+			System.out.print("You are The Red Hot Chili Peppers");
 
-			} else if (thewho > redhotchilipeppers & thewho > rollingstones
-					&& thewho > ledzeppelin) {
-				System.out.print("You are The Who");
+		} else if (thewho > redhotchilipeppers & thewho > rollingstones
+				&& thewho > ledzeppelin) {
+			System.out.print("You are The Who");
 
-			} else if (rollingstones > redhotchilipeppers
-					& rollingstones > thewho && rollingstones > ledzeppelin) {
-				System.out.print("You are The Rolling Stones");
-			} else if (rollingstones == ledzeppelin || rollingstones == redhotchilipeppers || rollingstones == thewho
-					|| thewho == ledzeppelin || thewho == redhotchilipeppers
-					|| ledzeppelin == redhotchilipeppers) {
-				System.out.print("The results are inconclusive, please insert 50 cents and try again.");
+		} else if (rollingstones > redhotchilipeppers & rollingstones > thewho
+				&& rollingstones > ledzeppelin) {
+			System.out.print("You are The Rolling Stones");
+		} else if (rollingstones == redhotchilipeppers
+				|| rollingstones == thewho || rollingstones == ledzeppelin ||
+				 thewho == redhotchilipeppers || thewho == ledzeppelin || ledzeppelin == redhotchilipeppers) {
+			System.out.print("The results are inconclusive, please insert 50 cents and try again.");
 
 			}
 		}
 	}
-
+}
