@@ -134,13 +134,14 @@ public class Band {
 
 		} else if (rollingstones > redhotchilipeppers & rollingstones > thewho && rollingstones > ledzeppelin) {
 			return ("You are The Rolling Stones");
-		} else{
+		} else if (rollingstones == ledzeppelin || rollingstones == redhotchilipeppers || rollingstones == thewho
+				|| thewho == ledzeppelin || thewho == redhotchilipeppers
+				|| ledzeppelin == redhotchilipeppers) {
 			return ("The results are inconclusive, please insert 50 cents and try again.");
 
 		
 		}
-		
-		//return "";
+		return "";
 	}
 }
 
