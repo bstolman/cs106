@@ -1,3 +1,4 @@
+import java.io.PrintStream;
 import java.util.Scanner;
 
 /**
@@ -103,7 +104,15 @@ public class Band {
 			ledzeppelin++;
 			thewho++;
 		}
-			
+			System.out.println("Does your band have the letter 'r' in its name ?");
+			likesrock = console.nextBoolean();
+			if (likesrock == true) {
+				redhotchilipeppers++;
+				rollingstones++;
+			} else {
+				thewho++;
+				ledzeppelin++;
+			}
 			
 		System.out.println(getResults(ledzeppelin, rollingstones, redhotchilipeppers, thewho));
 			}
