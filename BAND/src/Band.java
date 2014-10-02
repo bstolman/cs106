@@ -28,7 +28,7 @@ public class Band {
 		// TODO Auto-generated method stub
 
 		Scanner console = new Scanner(System.in);
-
+		// Set up variables in main method
 		double rollingstones = 0;
 		double ledzeppelin = 0;
 		double redhotchilipeppers = 0;
@@ -46,11 +46,15 @@ public class Band {
 		if (likesrock == true) {
 		}
 		System.out.println("I respect that!");
+		
+		// 1 'point' will be assigned to the following bands if user enters true or false
+		
 		rollingstones++;
 		ledzeppelin++;
 		redhotchilipeppers++;
 		thewho++;
-		// If true goes to question two.
+		
+		// If user answers true, he or she goes onto question two.
 
 		System.out.println("Is most of your band alive?");
 		likesrock = console.nextBoolean();
@@ -61,6 +65,9 @@ public class Band {
 			ledzeppelin++;
 			thewho++;
 		}
+		
+		// The Red Hot Chili Peppers have the most members that are alive
+		
 		System.out.println("Does your guitarist have long hair?");
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
@@ -93,6 +100,7 @@ public class Band {
 		} else {
 			redhotchilipeppers++;
 		}
+		//All of the bands formed in the 60's except for the Red Hot Chili Peppers
 		System.out.println("Does your band have more than 3 top 10 hits in the US ?");
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
@@ -104,11 +112,11 @@ public class Band {
 			thewho++;
 		}
 			
-			
+		// The Rolling Stones had the most - 28!	
 		System.out.println(getResults(ledzeppelin, rollingstones, redhotchilipeppers, thewho));
 			}
 		
-	
+	// The program returns answers to getResults method above
 	public static String getResults(double ledzeppelin, double rollingstones, double redhotchilipeppers, double thewho){
 		
 		if (ledzeppelin > redhotchilipeppers & ledzeppelin > rollingstones
