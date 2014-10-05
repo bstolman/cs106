@@ -39,9 +39,9 @@ public class hashashas {
 		boolean likesrock = false;
 		while (likesrock == false) {
 			System.out.println("Do you like rock music? (Answer True or False)");
-			while (!console.hasNextBoolean()) {
+			while (!console.hasNextBoolean())
 				console.next();
-			System.out.println("Please stop trying to crash this program and put in true or false"); }
+			System.out.println("nope");
 			likesrock = console.nextBoolean();
 		}
 		// Loops if you answer false to the first question.
@@ -64,9 +64,6 @@ public class hashashas {
 		// If user answers true, he or she goes onto question two.
 
 		System.out.println("Is most of your band alive?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
 			redhotchilipeppers++;
@@ -79,9 +76,6 @@ public class hashashas {
 		// The Red Hot Chili Peppers have the most members that are alive
 		
 		System.out.println("Does your guitarist have long hair?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
 			redhotchilipeppers++;
@@ -92,9 +86,6 @@ public class hashashas {
 		// All guitarists have long hair except for Pete Townshend
 		}
 		System.out.println("Does your band have more than 10 studio albums?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		// The Rolling Stones have 29 studio albums
 		// Led Zeppelin have 9 studio albums
@@ -108,9 +99,6 @@ public class hashashas {
 			ledzeppelin++;
 		}
 		System.out.println("Did your band form in the 60's ?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
 			rollingstones++;
@@ -121,9 +109,6 @@ public class hashashas {
 		}
 		//All of the bands formed in the 60's except for the Red Hot Chili Peppers
 		System.out.println("Does your band have more than 3 top 10 hits in the US ?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
 			rollingstones++;

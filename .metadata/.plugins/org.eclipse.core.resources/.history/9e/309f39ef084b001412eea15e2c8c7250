@@ -33,27 +33,30 @@ public class hashashas {
 		double ledzeppelin = 0;
 		double redhotchilipeppers = 0;
 		double thewho = 0;
-
-		System.out.println("WHICH FAMOUS BAND ARE YOU?");
-
-		boolean likesrock = false;
+		
+	System.out.println("WHICH FAMOUS BAND ARE YOU?");
+		
+		boolean likesrock = false; 
 		while (likesrock == false) {
 			System.out.println("Do you like rock music? (Answer True or False)");
-			while (!console.hasNextBoolean()) {
-				console.next();
-			System.out.println("Please stop trying to crash this program and put in true or false"); }
-			likesrock = console.nextBoolean();
-		}
+			if  (console.hasNextBoolean()) {
+				likesrock = console.nextBoolean(); 
+				if (likesrock) {
+					System.out.println("I respect that!");
+					// put your questions here
+				} else { 
+					System.out.print("Stop doing that!");  
+				}
+			} else {
+				System.out.print("Noo Noo Noo...");
+				System.out.print(" Please enter true or false!");
+			}
+				
 		// Loops if you answer false to the first question.
 
 		
-		
-		if (likesrock == true) {
+			
 		}
-		System.out.println("I respect that!");
-		
-		
-		
 		// 1 'point' will be assigned to the following bands if user enters true or false
 		
 		rollingstones++;
@@ -62,12 +65,11 @@ public class hashashas {
 		thewho++;
 		
 		// If user answers true, he or she goes onto question two.
-
+		
+		
 		System.out.println("Is most of your band alive?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
+		
 		if (likesrock == true) {
 			redhotchilipeppers++;
 		} else {
@@ -79,9 +81,6 @@ public class hashashas {
 		// The Red Hot Chili Peppers have the most members that are alive
 		
 		System.out.println("Does your guitarist have long hair?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
 			redhotchilipeppers++;
@@ -92,9 +91,6 @@ public class hashashas {
 		// All guitarists have long hair except for Pete Townshend
 		}
 		System.out.println("Does your band have more than 10 studio albums?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		// The Rolling Stones have 29 studio albums
 		// Led Zeppelin have 9 studio albums
@@ -108,9 +104,6 @@ public class hashashas {
 			ledzeppelin++;
 		}
 		System.out.println("Did your band form in the 60's ?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
 			rollingstones++;
@@ -121,9 +114,6 @@ public class hashashas {
 		}
 		//All of the bands formed in the 60's except for the Red Hot Chili Peppers
 		System.out.println("Does your band have more than 3 top 10 hits in the US ?");
-		while(!console.hasNextBoolean()) {
-			console.next();
-		System.out.println("Please stop trying to crash this program and put in true or false"); }
 		likesrock = console.nextBoolean();
 		if (likesrock == true) {
 			rollingstones++;
@@ -135,17 +125,18 @@ public class hashashas {
 		}
 			
 		// The Rolling Stones had the most - 28!	
-		System.out.println(getResults(ledzeppelin, rollingstones, redhotchilipeppers, thewho));
-			}
-		
+		System.out.println(getResults(ledzeppelin, rollingstones, redhotchilipeppers, thewho)); }}
+
 	// The program returns answers to getResults method above
-	public static String getResults(double ledzeppelin, double rollingstones, double redhotchilipeppers, double thewho){
-		
+	public static String getResults(double ledzeppelin, double rollingstones,
+			double redhotchilipeppers, double thewho) {
+
 		if (ledzeppelin > redhotchilipeppers & ledzeppelin > rollingstones
 				&& ledzeppelin > thewho) {
 			return ("You are Led Zeppelin");
 
-		} else if (redhotchilipeppers > ledzeppelin & redhotchilipeppers > rollingstones
+		} else if (redhotchilipeppers > ledzeppelin
+				& redhotchilipeppers > rollingstones
 				&& redhotchilipeppers > thewho) {
 			return ("You are The Red Hot Chili Peppers");
 
@@ -153,15 +144,14 @@ public class hashashas {
 				&& thewho > ledzeppelin) {
 			return ("You are The Who");
 
-		} else if (rollingstones > redhotchilipeppers & rollingstones > thewho && rollingstones > ledzeppelin) {
+		} else if (rollingstones > redhotchilipeppers & rollingstones > thewho
+				&& rollingstones > ledzeppelin) {
 			return ("You are The Rolling Stones");
-		} else{
+		} else {
 			return ("The results are inconclusive, please insert 50 cents and try again.");
 
-		
 		}
-		
-		//return "";
+
+		// return "";
 	}
 }
-
