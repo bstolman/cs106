@@ -76,13 +76,17 @@ public class hashashas {
 				rollingstones++;
 				ledzeppelin++;
 				thewho++;
+		console.nextLine();
 			}
+			
+
 			// The Red Hot Chili Peppers have the most members that are alive
 
 			System.out.println("Does your guitarist have long hair?");
 			while (!console.hasNextBoolean()) {
 				console.nextLine();
-				System.out.println("Please stop trying to crash this program and put in true or false");
+				System.out
+						.println("Please stop trying to crash this program and put in true or false");
 			}
 				likesrock = console.nextBoolean();
 				if (likesrock == true) {
@@ -91,13 +95,14 @@ public class hashashas {
 				ledzeppelin++;
 				} else {
 				thewho++;
-			
 				// All guitarists have long hair except for Pete Townshend
 			}
-			System.out.println("Does your band have more than 10 studio albums?");
+			System.out
+					.println("Does your band have more than 10 studio albums?");
 			while (!console.hasNextBoolean()) {
 				console.nextLine();
-				System.out.println("Please stop trying to crash this program and put in true or false");
+				System.out
+						.println("Please stop trying to crash this program and put in true or false");
 			}
 			likesrock = console.nextBoolean();
 			// The Rolling Stones have 29 studio albums
@@ -110,7 +115,7 @@ public class hashashas {
 			} else {
 				redhotchilipeppers++;
 				ledzeppelin++;
-			} console.nextLine();
+			}
 			System.out.println("Did your band form in the 60's ?");
 			while (!console.hasNextBoolean()) {
 				console.nextLine();
@@ -123,7 +128,7 @@ public class hashashas {
 				thewho++;
 			} else {
 				redhotchilipeppers++;
-			
+			}
 			// All of the bands formed in the 60's except for the Red Hot Chili
 			// Peppers
 			System.out.println("Does your band have more than 3 top 10 hits in the US ?");
@@ -139,15 +144,12 @@ public class hashashas {
 				redhotchilipeppers++;
 				ledzeppelin++;
 				thewho++;
-			console.close();
+			}
 
 			// The Rolling Stones had the most - 28!
 			System.out.println(getResults(ledzeppelin, rollingstones,redhotchilipeppers, thewho));
-					}
-				}
-			}
-		}	
-		
+		}
+	}
 
 	// The program returns answers to getResults method above
 	public static String getResults(double ledzeppelin, double rollingstones,
