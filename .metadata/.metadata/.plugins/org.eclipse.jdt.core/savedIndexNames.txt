@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+/Users/BenStolman/Desktop/cs106/.metadata/.metadata/.plugins/org.eclipse.jdt.core
+344445544.index

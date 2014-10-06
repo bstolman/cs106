@@ -37,7 +37,7 @@ public class hashashas {
 		System.out.println("WHICH FAMOUS BAND ARE YOU?");
 
 		boolean likesrock = false;
-		while (likesrock == false) {
+			while (likesrock == false) {
 			System.out.println("Do you like rock music? (Answer True or False)");
 			while (!console.hasNextBoolean()) {
 				console.next();
