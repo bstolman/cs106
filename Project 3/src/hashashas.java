@@ -36,21 +36,22 @@ public class hashashas {
 
 		System.out.println("WHICH FAMOUS BAND ARE YOU?");
 
-		boolean likesrock = false;
+			boolean likesrock = false;
 			while (likesrock == false) {
+			
 			System.out.println("Do you like rock music? (Answer True or False)");
 			while (!console.hasNextBoolean()) {
-				console.next();
+				console.nextLine();
 			System.out.println("Please stop trying to crash this program and put in true or false"); }
 			likesrock = console.nextBoolean();
-		}
+			}
 		// Loops if you answer false to the first question.
-
-		
-		
-		if (likesrock == true) {
-		}
-		System.out.println("I respect that!");
+			
+			System.out.println("Please stop trying to crash this program and put in true or false");
+		    {
+		    if (likesrock == true) {
+		    }
+		    System.out.println("I respect that!");
 		
 		
 		
@@ -136,16 +137,18 @@ public class hashashas {
 			
 		// The Rolling Stones had the most - 28!	
 		System.out.println(getResults(ledzeppelin, rollingstones, redhotchilipeppers, thewho));
-			}
-		
+			}}
+
 	// The program returns answers to getResults method above
-	public static String getResults(double ledzeppelin, double rollingstones, double redhotchilipeppers, double thewho){
-		
+	public static String getResults(double ledzeppelin, double rollingstones,
+			double redhotchilipeppers, double thewho) {
+
 		if (ledzeppelin > redhotchilipeppers & ledzeppelin > rollingstones
 				&& ledzeppelin > thewho) {
 			return ("You are Led Zeppelin");
 
-		} else if (redhotchilipeppers > ledzeppelin & redhotchilipeppers > rollingstones
+		} else if (redhotchilipeppers > ledzeppelin
+				& redhotchilipeppers > rollingstones
 				&& redhotchilipeppers > thewho) {
 			return ("You are The Red Hot Chili Peppers");
 
@@ -153,15 +156,14 @@ public class hashashas {
 				&& thewho > ledzeppelin) {
 			return ("You are The Who");
 
-		} else if (rollingstones > redhotchilipeppers & rollingstones > thewho && rollingstones > ledzeppelin) {
+		} else if (rollingstones > redhotchilipeppers & rollingstones > thewho
+				&& rollingstones > ledzeppelin) {
 			return ("You are The Rolling Stones");
-		} else{
+		} else {
 			return ("The results are inconclusive, please insert 50 cents and try again.");
 
-		
 		}
-		
-		//return "";
+
+		// return "";
 	}
 }
-
