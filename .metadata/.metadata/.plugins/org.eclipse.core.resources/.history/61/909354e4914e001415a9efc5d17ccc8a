@@ -123,7 +123,7 @@ public class hashashas {
 				thewho++;
 			} else {
 				redhotchilipeppers++;
-			}
+			
 			// All of the bands formed in the 60's except for the Red Hot Chili
 			// Peppers
 			System.out.println("Does your band have more than 3 top 10 hits in the US ?");
@@ -145,7 +145,7 @@ public class hashashas {
 			System.out.println(getResults(ledzeppelin, rollingstones,redhotchilipeppers, thewho));
 					}
 				}
-			
+			}
 			
 		
 
