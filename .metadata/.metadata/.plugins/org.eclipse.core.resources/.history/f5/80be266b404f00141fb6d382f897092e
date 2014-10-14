@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.Scanner;
+/**
+ * 
+ */
+
+/**
+ * @author BenStolman
+ *
+ */
+public class ProjectNewFour {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException{
+		
+		// TODO Auto-generated method stub
+Scanner fileReader = new Scanner(new File("src/input.txt"));
+while (fileReader.hasNext()) {
+	
+	deposit += fileReader.nextDouble(); 
+	
+fileReader.close();
+	
+
+
+
+	
+	}
+} }

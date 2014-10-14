@@ -1,0 +1,54 @@
+import java.io.*;
+import java.util.Scanner;
+/**
+ * 
+ */
+
+/**
+ * @author BenStolman
+ *@param
+ *@throws
+ *
+ */
+public class ProjectNewFour {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException{
+		
+		// TODO Auto-generated method stub
+Scanner fileReader = new Scanner(new File("src/input.txt"));
+while (fileReader.hasNextLine()) {
+	String date = fileReader.next();
+	String variable = fileReader.next();
+		if (variable.equals("Credit")) {
+			String card = fileReader.next();
+		}
+	if (variable.equals("Withdrawal"));
+		String Balalnce = fileReader.next();
+		
+				String card = fileReader.next();
+	double CheckingsOpeningbalance = 1540.39;
+	double SavingsOpeningbalance = 1000.00;
+	double CreditOpeningbalace = 549.20;
+	
+	double creditcard = 0;
+	double savings = 0;
+	double checkings = 0;
+
+	
+	checkings += fileReader.nextDouble();
+	
+	System.out.println("deposit");
+	{
+	}
+fileReader.close();
+	
+
+
+
+	
+		}
+	}
+} 
