@@ -1,0 +1,64 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author BenStolman
+ *
+ */
+public class HipHipHorrayforArray {
+
+	/**
+	 * @param args
+	 */
+	private Scanner fileReader;
+	
+	public void openFile() {
+		try{
+			fileReader = new Scanner(new File("src/Mothership.txt"));
+			}
+		catch(Exception e) {
+			System.out.println("could not find file");
+		}
+	}
+	public void readFile() {
+		while(fileReader.hasNext()) {
+			int list = 0;
+			//While there is a line to be read
+			while(fileReader.hasNextLine()) {
+			//Add one to list
+			list ++; 
+			//Store the value
+			fileReader.nextLine();
+			
+			double[] number = new double[list];
+			double[] time = new double[list];
+			String[] band = new String[list];
+			String[] song = new String[list];
+
+			int i = 0;
+		
+			while (fileReader.hasNextLine()) { 
+				number[i] = fileReader.nextDouble();
+				time[i] = fileReader.nextDouble();
+				band[i] = fileReader.next();
+				band [i] = fileReader.next();
+				song[i] = fileReader.next();
+				}
+				System.out.println(number[i] + time[i] + band[i] + song[i]);
+
+			}	
+		}
+	}	
+			public void closeFile() {
+				fileReader.close();
+			
+			
+	}
+}
+
+

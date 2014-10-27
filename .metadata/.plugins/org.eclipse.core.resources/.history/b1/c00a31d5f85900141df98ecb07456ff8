@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+
+/**
+ * @author BenStolman
+ *
+ */
+public class ArrayDemo {
+    public static void main(String[] args) {
+	        // declares an array of integers
+	        int[] anArray;
+
+	        // allocates memory for 10 integers
+	        anArray = new int[10];
+	        for (int i=0; i<anArray.length; i++) {
+	        	System.out.println(i);
+	        }
+    }
+	        	 public static void main1(String[] args) {
+	        	        char[] copyFrom = { 'd', 'e', 'c', 'a', 'f', 'f', 'e',
+	        				    'i', 'n', 'a', 't', 'e', 'd' };
+	        	        char[] copyTo = new char[7];
+
+	        	        System.arraycopy(copyFrom, 2, copyTo, 0, 7);
+	        	        System.out.println(new String(copyTo));
+     	    }
+	 }
