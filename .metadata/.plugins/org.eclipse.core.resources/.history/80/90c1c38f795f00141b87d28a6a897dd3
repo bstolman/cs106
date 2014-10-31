@@ -1,0 +1,10 @@
+public class second {
+public static void main(String[] args) {
+	  HipHipHorrayforArray fileReader = new HipHipHorrayforArray();
+	  fileReader.toInt();
+	  fileReader.openFile();
+	  fileReader.readFile();
+	  fileReader.closeFile();
+	  
+	}
+}

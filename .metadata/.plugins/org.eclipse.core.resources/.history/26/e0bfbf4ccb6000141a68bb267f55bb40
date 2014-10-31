@@ -1,0 +1,51 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+/**
+ * @author BenStolman
+ *
+ */
+public class HipHipHorrayforArray {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+		// MusicLibrary library = new MusicLibrary();
+		// library.load("src/Mothership.txt");
+		// library.analyze();
+
+		int numLines = 0;
+		Scanner fileReader = new Scanner(new File("src/Mothership.txt"));
+		while (fileReader.hasNextLine()) {
+			fileReader.nextLine();
+			numLines++;
+			}
+		System.out.print(numLines);
+		fileReader.close();
+	}
+	private Scanner fileReader;
+
+	public void readFile() {
+		int i = 0;
+		Track[] Music = new Track [i];
+		
+		while (fileReader.hasNext()) {
+			int number = fileReader.nextInt();
+			String time = fileReader.nextLine();
+			String artist = fileReader.nextLine();
+			String song = fileReader.nextLine();
+
+			Music [i] = new Track(number, time, artist, song);
+			}
+
+	}
+	public void closeFile() {
+		fileReader.close();
+
+	}
+}
+

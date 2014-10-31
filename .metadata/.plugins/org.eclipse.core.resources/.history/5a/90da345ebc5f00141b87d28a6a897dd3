@@ -1,0 +1,27 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class second {
+public static void main(String[] args) {
+	  HipHipHorrayforArray fileReader = new HipHipHorrayforArray();
+	
+	  fileReader.openFile();
+	  fileReader.readFile();
+	  fileReader.closeFile();
+	  
+	}
+
+
+public static void main2(String[] args) throws FileNotFoundException {
+
+	int numLines = 0;
+	Scanner fileReader = new Scanner(new File("src/Mothership.txt"));
+	while (fileReader.hasNextLine()) {
+		fileReader.nextLine();
+		numLines++;
+		}
+	System.out.print(numLines);
+	fileReader.close();
+	}
+}

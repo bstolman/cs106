@@ -1,0 +1,11 @@
+
+public class MusicLibrary {
+	// declare a variable to store an array of Track objects
+	Track[] tracks;
+	
+	// Create a load method to load the tracks from a file
+	
+	// Create a numLines method to calculate number of lines in the file
+	
+	// Create an analyze method to analyze the data in the array
+}

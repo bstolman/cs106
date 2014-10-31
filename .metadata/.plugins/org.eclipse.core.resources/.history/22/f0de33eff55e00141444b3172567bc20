@@ -1,0 +1,18 @@
+import java.io.FileNotFoundException;
+
+
+public class second {
+public static void main(String[] args) {
+	  HipHipHorrayforArray fileReader = new HipHipHorrayforArray();
+	  try {
+		fileReader.countFile();
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	  fileReader.openFile();
+	  fileReader.readFile();
+	  fileReader.closeFile();
+	  
+	}
+}
