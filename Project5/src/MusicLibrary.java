@@ -2,45 +2,48 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-
 public class MusicLibrary {
 	// declare a variable to store an array of Track objects
 	Track[] tracks;
-	
 	// Create a load method to load the tracks from a file
-	private Scanner fileReader;
 
-	public void readFile() {
+	public void readFile(String filepath) throws FileNotFoundException {
 		int i = 0;
-		Track[] Music = new Track [i];
-		
-		while (fileReader.hasNext()) {
-			int number = fileReader.nextInt();
-			String time = fileReader.nextLine();
-			String artist = fileReader.nextLine();
-			String song = fileReader.nextLine();
+		Scanner fileReader = new Scanner(new File("src/Mothership.txt"));
 
-			Music [i] = new Track(number, time, artist, song);
-			System.out.print(i);
-			}
+		while (fileReader.hasNext()) {
+			String number = fileReader.next();
+			String time = fileReader.next();
+			String artist = fileReader.next();
+			String song = fileReader.next();
+
+			this.tracks[i] = new Track(number, time, artist, song);
+
+			System.out.println(tracks[i]);
+
+		}
+		fileReader.close();
 	}
-	
+
 	// Create a numLines method to calculate number of lines in the file
-	public static void main(String[] args) throws FileNotFoundException {
-	int numLines = 0;
-	Scanner fileReader = new Scanner(new File("src/Mothership.txt")); {
-	while (fileReader.hasNextLine()) {
-		fileReader.nextLine();
-		numLines++;
-		}
-	System.out.print(numLines);
-	fileReader.close();
+	public MusicLibrary() throws FileNotFoundException {
+		int numLines = 0;
+		Scanner fileReader = new Scanner(new File("src/Mothership.txt"));
+		{
+			while (fileReader.hasNextLine()) {
+				fileReader.nextLine();
+				numLines++;
 			}
+			System.out.println(numLines);
+			fileReader.close();
+
 		}
-	
+		// Sizing Array
+		this.tracks = new Track[numLines];
+	}
+
 	// Create an analyze method to analyze the data in the array
-	private static void analyze() {
-		// TODO Auto-generated method stub
+	public void analyze() {
 		System.out.print("Yes");
 	}
 }
