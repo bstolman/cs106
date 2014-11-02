@@ -2,7 +2,7 @@ import java.io.*;
 
 /**
  * @author BenStolman
- *
+ * @throws FilNotFoundException
  */
 public class HipHipHorrayforArray {
 
