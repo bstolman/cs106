@@ -1,10 +1,12 @@
 import java.io.File;
+import java.util.Arrays;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class MusicLibrary {
 	// declare a variable to store an array of Track objects
 	Track[] tracks;
+
 	// Create a load method to load the tracks from a file
 
 	public void readFile(String filepath) throws FileNotFoundException {
@@ -12,8 +14,8 @@ public class MusicLibrary {
 		Scanner fileReader = new Scanner(new File("src/Mothership.txt"));
 
 		while (fileReader.hasNext()) {
-			String number = fileReader.next();
-			String time = fileReader.next();
+			int number = fileReader.nextInt();
+			int time = fileReader.nextInt();
 			String artist = fileReader.next();
 			String song = fileReader.next();
 
@@ -43,7 +45,20 @@ public class MusicLibrary {
 	}
 
 	// Create an analyze method to analyze the data in the array
-	public void analyze() {
-		System.out.print("Yes");
-	}
-}
+	
+	public void analyze() throws FileNotFoundException {
+		
+		Scanner fileReader = new Scanner(new File("src/Mothership.txt"));
+		int array[] = new int[10];
+
+	    System.out.println("Enter the numbers now.");
+
+	           for (int i = 0 ; i < array.length; i++ ) {
+	           
+
+
+	    
+	    printArray(array);
+		
+			}
+		
