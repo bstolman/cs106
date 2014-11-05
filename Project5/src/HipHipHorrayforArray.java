@@ -16,6 +16,7 @@ public class HipHipHorrayforArray {
 		//Reads file
 		library.readFile("src/Mothership.txt");
 		//Analyzes method
-		library.analyze();
+		library.getMaxValue();
+		System.out.println(library.getMaxValue());
 	}
 }

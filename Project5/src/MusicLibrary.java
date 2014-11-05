@@ -1,4 +1,5 @@
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -11,18 +12,19 @@ public class MusicLibrary {
 
 	public void readFile(String filepath) throws FileNotFoundException {
 		int i = 0;
+		// Scanner
 		Scanner fileReader = new Scanner(new File("src/Mothership.txt"));
-
+		// While the file reader has a next line to read it will continue
 		while (fileReader.hasNext()) {
 			int number = fileReader.nextInt();
 			int time = fileReader.nextInt();
 			String artist = fileReader.next();
 			String song = fileReader.next();
-
+			// Creates a Track Object
 			this.tracks[i] = new Track(number, time, artist, song);
 
 			System.out.println(tracks[i]);
-
+			i++;
 		}
 		fileReader.close();
 	}
@@ -45,20 +47,18 @@ public class MusicLibrary {
 	}
 
 	// Create an analyze method to analyze the data in the array
-	
-	public void analyze() throws FileNotFoundException {
-		
-		Scanner fileReader = new Scanner(new File("src/Mothership.txt"));
-		int array[] = new int[10];
-
-	    System.out.println("Enter the numbers now.");
-
-	           for (int i = 0 ; i < array.length; i++ ) {
-	           
-
-
-	    
-	    printArray(array);
-		
+	public int getMaxValue() throws FileNotFoundException {
+		int maxValue = 0;
+		// Find longest track in mothership
+		for (int i = 0; i < tracks.length; i++) {
+			if (tracks[i].getTime() > maxValue) {
+				maxValue = tracks[i].getTime();
+				tracks[i].getTime();
 			}
-		
+		}
+
+		return maxValue;
+
+	}
+}
+	
