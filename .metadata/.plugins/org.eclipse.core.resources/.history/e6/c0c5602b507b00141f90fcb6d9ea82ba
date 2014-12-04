@@ -1,0 +1,30 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
+
+import com.opencsv.CSVReader;
+
+public class Stock {
+	// declare a variable to store an array of Stock objects
+		Define[] defines;
+		// Create a load method to load the defines from a file
+	public void readFile(String filepath) throws IOException {
+		// TODO Auto-generated method stub
+	
+		      CSVReader reader = new CSVReader(new FileReader("src/S&P 500.csv"), ',' , '"' , 1);
+		       
+		      //Read CSV line by line and use the string array as you want
+		      String[] nextLine;
+		      while ((nextLine = reader.readNext()) != null) {
+		         if (nextLine != null) {
+		            //Verifying the read data here
+		            System.out.println(Arrays.toString(nextLine));
+		         }
+		       }
+		   }
+		
+
+	}

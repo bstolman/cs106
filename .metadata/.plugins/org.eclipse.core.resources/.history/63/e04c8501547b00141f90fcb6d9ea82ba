@@ -44,4 +44,4 @@ public class Define {
 	}
 
 }
-//loop through and call to string directly from stock reader "stock class currently"
+//loop through and call to string directly
