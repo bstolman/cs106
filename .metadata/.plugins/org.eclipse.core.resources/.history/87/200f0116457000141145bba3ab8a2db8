@@ -1,0 +1,15 @@
+public class Recursionnn {
+	public static void main(String[] args) {
+		   int i = 1;
+		   if (i <= 10) {
+		      printf("%d", i++);
+		      main(args);
+		   }
+		}
+
+	private static void printf(String string, int i) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+	

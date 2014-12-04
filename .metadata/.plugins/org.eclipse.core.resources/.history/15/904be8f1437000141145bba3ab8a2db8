@@ -1,0 +1,14 @@
+import java.io.Console;
+
+
+public class Recursionnn {
+	public static void main(String[] args) {
+		sumOfSquares(0);
+	}
+	public static int sumOfSquares(int max) {
+		if (max < 1) {
+			return max * max + sumOfSquares(max-1);
+			}
+	return 1;
+	}
+}

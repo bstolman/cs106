@@ -1,0 +1,13 @@
+import java.io.Console;
+
+
+public class Recursionnn {
+	public static void main(String[] args) {
+	private static long factorial(int n)
+	{
+	    if (n == 1)
+	        return 1;
+	    else
+	        return n * factorial(n-1);
+	}	
+}

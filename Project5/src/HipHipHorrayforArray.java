@@ -9,14 +9,15 @@ public class HipHipHorrayforArray {
 	/**
 	 * @param args
 	 */
-	//Main method that throws exception if file isn't found
+	// Main method that throws exception if file isn't found
 	public static void main(String[] args) throws FileNotFoundException {
-		//Creating Object Class
+		// Creating Object Class
 		MusicLibrary library = new MusicLibrary();
-		//Reads file
+		// Reads file
 		library.readFile("src/Mothership.txt");
-		//Analyzes method
+		// Analyzes method
 		library.getMaxValue();
+		// Print out MaxValue
 		System.out.println(library.getMaxValue());
 	}
 }

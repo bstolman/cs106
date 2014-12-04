@@ -1,0 +1,34 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.HashMap;
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author BenStolman
+ *
+ */
+public class Final {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		// Creating Object Class
+		Stock library = new Stock();
+		// Reads file
+		library.readFile(new File("src/S&P 500.csv"));
+		
+		
+		}
+		
+		
+	}
+
+	
+

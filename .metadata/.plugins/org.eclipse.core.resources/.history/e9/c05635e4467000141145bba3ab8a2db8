@@ -1,0 +1,17 @@
+import java.io.Console;
+
+public class Recursionnn {
+	 
+	    public static void main(String[] args) {  
+	        show(10);      
+	    }  
+	      // print 1 to n  
+	    private static void show(int n) {  
+	        if (n > 1) {  
+	            show(n-1);  
+	        }  
+	        System.out.println(n);  
+	    }
+}
+
+		

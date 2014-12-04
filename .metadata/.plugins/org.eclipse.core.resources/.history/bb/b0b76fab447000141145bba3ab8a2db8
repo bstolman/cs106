@@ -1,0 +1,23 @@
+import java.io.Console;
+
+
+public class Recursionnn {
+	void printNumber(int value) {
+		   int i;
+		   printf("%d\n", value);
+		   i = value + 1;
+		 
+		   if (i > 10)
+		      return;
+		   printNumber(i);
+		}
+		 
+		private void printf(String string, int value) {
+		// TODO Auto-generated method stub
+		
+	}
+
+		void main() {
+		   printNumber(1);
+		}
+}

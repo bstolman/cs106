@@ -1,0 +1,29 @@
+import java.io.Console;
+
+public class Recursionnn {
+	 
+	    public static void main(String[] args) {  
+	        countUp(10); 
+	        countSum(10);
+	    }  
+	      // print 1 to n  
+	    public static void countUp(int n) {  
+	        if (n > 1) {  
+	            countUp(n-1);  
+	        }  
+	        System.out.println(n);  
+	   
+	    }
+	
+	    public static void countSum(int n) {
+	    while (n !=0){
+	    	int sum = 0;
+	    	sum += n ;
+	    	n /= 10;
+	    	System.out.print(sum);
+	    	
+	    }
+	}
+}
+
+		

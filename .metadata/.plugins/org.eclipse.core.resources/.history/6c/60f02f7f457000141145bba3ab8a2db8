@@ -1,0 +1,14 @@
+public class Recursionnn {
+	 
+	    public static void main(String[] args) {  
+	        display(10800);      
+	    }  
+	      
+	    // print 1 to n  
+	    private static void display(int n) {  
+	        if (n > 1) {  
+	            display(n-1);  
+	        }  
+	        System.out.println(n);  
+	    }  
+	}  
