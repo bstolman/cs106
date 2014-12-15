@@ -1,0 +1,31 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import com.opencsv.CSVReader;
+
+import au.com.bytecode.opencsv.*;
+import au.com.bytecode.opencsv.bean.*;
+
+/**
+ * @author BenStolman
+ *
+ */
+public class Final {
+
+	/**
+	 * @param args
+	 * @throws IOException
+	 */
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		// Creating Object Class
+		Stock library = new Stock();
+		// Reads file
+		library.readFile("src/S&P 500.csv");
+		abstract class BeanPropertyRowMapper<T> {
+			abstract void mapRow(java.sql.ResultSet rs, int rowNum);
+	}
+
+}
+}

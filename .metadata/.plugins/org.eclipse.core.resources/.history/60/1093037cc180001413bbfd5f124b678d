@@ -1,0 +1,7 @@
+
+public class ColumnIdentifier {
+	static void setUpMyCsv() {
+	double[][] myArray = new double [10] [502]; 
+	}	
+}
+

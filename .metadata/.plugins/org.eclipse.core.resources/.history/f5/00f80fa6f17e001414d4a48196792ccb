@@ -1,0 +1,6 @@
+
+public class ColumnIdentifier {
+	public int length() {
+		return 0;
+	}
+}

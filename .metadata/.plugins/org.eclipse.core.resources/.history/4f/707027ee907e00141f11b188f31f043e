@@ -1,0 +1,62 @@
+import java.io.FileReader;
+import java.util.List;
+import org.supercsv.cellprocessor.constraint.NotNull;
+import org.supercsv.cellprocessor.constraint.UniqueHashCode;
+import org.supercsv.cellprocessor.ift.CellProcessor;
+import org.supercsv.io.ICsvListReader;
+import org.supercsv.prefs.CsvPreference;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import com.opencsv.CSVReader;
+import au.com.bytecode.opencsv.*;
+import au.com.bytecode.opencsv.bean.*;
+
+
+public class readVariableColumnsWithCsvListReader {
+	final CellProcessor[] values = new CellProcessor[] { new UniqueHashCode(), 
+            new NotNull(), // ticker
+            new NotNull(), // company
+            new NotNull(), // sector
+            new NotNull(), // country
+            new NotNull(), // marketCap
+            new NotNull(), // PE
+            new NotNull(), // price
+            new NotNull(), // change
+            new NotNull(), // volume
+           
+	}; 
+    
+    final CellProcessor[] defines = new CellProcessor[] { values[0], // customerNo
+            values[1], // firstName
+            values[2] }; // lastName
+    
+    ICsvListReader listReader = null;
+    try {
+            listReader =  CsvListReader(new FileReader("src/S&P 500.csv"), CsvPreference.STANDARD_PREFERENCE);
+            
+            listReader.getHeader(true); // skip the header (can't be used with CsvListReader)
+            
+            while( (listReader.read()) != null ) {
+                    
+                    // use different processors depending on the number of columns
+                    final CellProcessor[] processors;
+                    if( listReader.length() == defines.length ) {
+                            processors = defines;
+                    } else {
+                            processors = values;
+                    }
+                    
+                    final List<Object> customerList = listReader.executeProcessors(processors);
+                    System.out.println(String.format("lineNo=%s, rowNo=%s, columns=%s, customerList=%s",
+                            listReader.getLineNumber(), listReader.getRowNumber(), customerList.size(), customerList));
+            }
+            
+    }
+    finally {
+            if( listReader != null ) {
+                    listReader.close();
+            }
+    }
+}
+}

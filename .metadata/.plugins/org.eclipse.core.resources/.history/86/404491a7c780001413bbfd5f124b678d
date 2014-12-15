@@ -1,0 +1,42 @@
+import java.util.List;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Timer;
+
+import com.opencsv.CSVReader;
+
+import java.lang.Object;
+
+
+public class Stock {
+	// declare a variable to store an array of Stock objects
+	ArrayList<StockID> stocks;
+
+	// Create a load method to load the defines from a file
+	public void readFile(String filepath) throws IOException {
+		// TODO Auto-generated method stub
+
+		CSVReader reader = new CSVReader(new FileReader("src/S&P 500.csv"),
+				',', '"', 1);
+
+		// Read CSV line by line and use the string array as you want
+		java.util.List<String[]> List;
+	     //Read all rows at once
+	     List<String[]> allRows = reader.readAll();
+	       
+	      //Read CSV line by line and use the string array as you want
+	     this.stocks = new ArrayList<StockID>();
+	     for(String[] row : allRows){
+	    	 this.stocks.add(new StockID(row[0], row[1], row[2], row[3], row[4], Integer.parseInt(row[5]), Integer.parseInt(row[6]), Integer.parseInt(row[7]), Integer.parseInt(row[8]), Integer.parseInt(row[9])));
+	     }
+	     
+	     for (StockID s : this.stocks) {
+	    	 System.out.println(s);
+	     }
+	   }
+	}

@@ -1,5 +1,7 @@
 import java.io.*;
+
 import com.opencsv.CSVReader;
+
 import au.com.bytecode.opencsv.*;
 import au.com.bytecode.opencsv.bean.*;
 
@@ -9,18 +11,20 @@ public class StockID {
 	public static int values;
 	String ticker;
 	String company;
+	String industry;
 	String sector;
 	String country;
-	int marketCap;
-	int PE;
-	int price;
-	int change;
+	double marketCap;
+	double PE;
+	double price;
+	double change;
 	int volume;
 
-	public StockID(String ticker, String company, String sector, String country,
-			int marketCap, int PE, int price, int change, int volume) {
+	public StockID(String ticker, String company,String industry, String sector, String country,
+			double marketCap, double PE, double price, double change, int volume) {
 		this.ticker = ticker;
 		this.company = company;
+		this.industry = industry;
 		this.sector = sector;
 		this.country = country;
 		this.marketCap = marketCap;
@@ -34,11 +38,11 @@ public class StockID {
 	public StockID() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	public String toString() {
-		return this.ticker + "\t" + this.company + "\t" + this.sector + "\t"
-				+ this.country + "\t" + this.marketCap + "\t" + this.PE + "\t"
-				+ this.price + "\t" + this.change + "\t" + this.volume + "\t";
+		return this.ticker + "\t" + "\t" + this.company + "\t" + "\t" + this.industry + "\t" + "\t"  + "\t" + this.sector + "\t"
+				 + "\t" + this.country + "\t" + "\t" + this.marketCap + "\t" + "\t" + this.PE + "\t" + "\t"
+				+ this.price + "\t" + "\t" + this.change + "\t" + "\t" + this.volume + "\t" + "\t";
 
 	}
 
