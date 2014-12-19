@@ -18,12 +18,14 @@ public class Final {
 	 * @param args
 	 * @throws IOException
 	 */
+	
 	//Objective - find the stock with the largest marketCap in the S&P 500
 	public static void main(String[] args) throws IOException {
 		// Creating Object Class
 		Stock library = new Stock();
 		// Reads file
 		library.readFile("src/S&P 500.csv");
+		//Needed to be able to read and print out libraries within classes
 		System.out.println("The stock with the highest marketCap: \n" + library.stocks.get(library.getMaxValue(library.callumns)));
 		
 	}

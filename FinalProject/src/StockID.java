@@ -7,7 +7,7 @@ import au.com.bytecode.opencsv.bean.*;
 
 
 public class StockID {
-	// Defining each value in relation to its function (integer or String).
+	// Defining each value in relation to its function (double, integer or String).
 	public static int values;
 	String ticker;
 	String company;
@@ -38,9 +38,9 @@ public class StockID {
 	public StockID() {
 		// TODO Auto-generated constructor stub
 	}
-	
+	//toString method
 	public String toString() {
-		return this.ticker + "\t" + "\t" + this.company + "\t" + "\t" + this.industry + "\t" + "\t"  + "\t" + this.sector + "\t"
+		return this.ticker + "\t" + "\t" + this.company + "\t" + "\t" + this.industry + "\t" + "\t" + this.sector + "\t"
 				 + "\t" + this.country + "\t" + "\t" + this.marketCap + "\t" + "\t" + this.PE + "\t" + "\t"
 				+ this.price + "\t" + "\t" + this.change + "\t" + "\t" + this.volume + "\t" + "\t";
 
@@ -52,5 +52,3 @@ public class StockID {
 	}
 
 }
-//loop through and call to string directly from stock reader "stock class currently"
-//goal find the best stock - according to preset conditions ie lowest pe

@@ -1,0 +1,79 @@
+import java.util.List;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Timer;
+
+import com.opencsv.CSVReader;
+
+import java.lang.Object;
+
+
+public class Stock {
+	// declare a variable to store an array of Stock objects
+	ArrayList<StockID> stocks;
+	public List<String[]> callumns;
+
+	// Create a load method to load the defines from a file
+	public void readFile(String filepath) throws IOException {
+		// TODO Auto-generated method stub
+
+		CSVReader reader = new CSVReader(new FileReader("src/S&P 500.csv"),
+				',', '"', 1);
+
+		// Read CSV line by line and use the string array as you want
+		java.util.List<String[]> List;
+		//Read all rows at once
+		List<String[]> allColumns = reader.readAll();
+		callumns = allColumns;
+		
+		//Read CSV line by line and use the string array as you want
+		this.stocks = new ArrayList<StockID>();
+		for(String[] column : allColumns){
+			this.stocks.add(new StockID(column[0], column[1], column[2], column[3], column[4], Double.parseDouble(column[5]), Double.parseDouble(column[6]), Double.parseDouble(column[7]), Double.parseDouble(column[8]), Integer.parseInt(column[9])));
+		}
+	}
+
+//Method to find max value
+public int getMaxValue(List<String[]> allColumns, List<String[]> callums, String[] column) { 
+	// TODO Auto-generated method stub
+	String ticker = column[0];
+	String company = null;
+	String industry = null;
+	String sector = null;
+	String country = null;
+	double marketCap = 0;
+	double PE = 0;
+	double price = 0;
+	double change = 0;
+	int volume = 0;
+	double currentMax = 0;
+	int maxIndex = 0;
+	
+	for (StockID n : this.stocks) {
+		
+		System.out.printf("%30.30s%n, %30.30s%n", ticker, company);
+		
+
+		for(int i = 0; i < allColumns.size(); i++)
+		{
+			if (Double.parseDouble(allColumns.get(i)[5]) > currentMax)
+				
+			{
+				currentMax = Double.parseDouble(allColumns.get(i)[5]);
+				maxIndex = i;
+			
+				}
+			}
+		
+		}
+	return maxIndex;
+	}
+
+}
+
+
